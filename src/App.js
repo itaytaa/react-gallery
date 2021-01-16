@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import { FaAngleDoubleDown } from "react-icons/fa";
+
 
 
 
@@ -30,12 +32,16 @@ function App() {
     <div className="App">
 
       <h1>Select an album:</h1>
+     
       <select value={value} onChange={handleChange} >
-        <option>please select...</option>
+        <option>please select... </option>
+       
         {albums.map((album) => {
           return <option key={album.id} value={album.id}>{album.title} </option>
         })}
       </select>
+      
+      <FaAngleDoubleDown className="arrow"/>
       <div className="imgContainer">{selectedAlbum.map((pic, index) => {
         return <img src={pic.url} alt="" key={index} />
       })}</div>
