@@ -18,10 +18,11 @@ function App() {
   }, []);
 
   function handleChange(e) {
+    setValue(e.target.value)
     fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${e.target.value}`)
       .then(res => res.json())
       .then(res => setSelectedAlbum(res))
-      .then(setValue(e.target.value))
+     
   }
 
 
