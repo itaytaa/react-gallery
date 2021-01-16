@@ -2,4 +2,35 @@
     width: 900px;
     margin: 0 auto;
     text-align: center;
+   
+}
+
+select {
+    height: 50px;
+    font-size: 20px;
+    padding: 0px 15px 0 15px;
+    text-align-last: center;
+    vertical-align: middle;
+}
+
+option {
+    position: relative;
+}
+
+img {
+    width: 150px;
+    margin: 5px;
+    box-shadow: 3px 13px 61px 12px rgba(21,19,19,0.4);
+}
+
+.imgContainer {
+    margin: auto;
+    width: 800px;
+    
+    margin-top: 30px;
+}
+
+img:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
 }
